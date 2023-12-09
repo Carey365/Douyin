@@ -1,4 +1,4 @@
-package com.example.basic.utils.excel;
+package com.example.basic.utils.excel.vo;
 
 import lombok.Getter;
 import lombok.Setter;
