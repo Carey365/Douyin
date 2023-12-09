@@ -33,14 +33,6 @@ public class UserController {
     @ParameterValidation
     public ControllerResponse<User> getUser(@RequestBody UserReqVO userReqVO){
         ControllerResponse<User> response=new ControllerResponse<>();
-//        Map<String,String> validationMap= ValidatorUtils.validate(userReqVO);
-//        for (Map.Entry<String,String> entry:validationMap.entrySet()){
-//            String key=entry.getKey();
-//            String value=entry.getValue();
-//            System.out.println("键为："+key);
-//            System.out.println("值为："+value);
-//        }
-
         log.info("controller入参为{}", JSON.toJSON(userReqVO));
         userReqVO.setName(null);
         ServiceResponse<User> serviceResponse=userService.getUser(userReqVO);
