@@ -1,7 +1,6 @@
-package com.example.basic.utils;
+package com.example.basic.utils.response;
 
-import com.example.basic.eums.ResponsEums;
-import lombok.Data;
+import com.example.basic.utils.response.Response;
 import lombok.Getter;
 import lombok.Setter;
 

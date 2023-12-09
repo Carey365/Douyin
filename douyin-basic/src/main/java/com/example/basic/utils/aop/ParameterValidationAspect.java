@@ -1,9 +1,9 @@
-package com.example.basic.utils;
+package com.example.basic.utils.aop;
 
 import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
-import com.example.basic.entity.User;
+import com.example.basic.utils.ValidatorUtil;
+import com.example.basic.utils.response.ControllerResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ import java.util.Map;
 @Component
 @Slf4j
 public class ParameterValidationAspect {
-    @Pointcut("@annotation(com.example.basic.utils.ParameterValidation)")
+    @Pointcut("@annotation(com.example.basic.utils.aop.ParameterValidation)")
     public void pointCut(){}
 
     @Around("pointCut()")
@@ -25,7 +25,7 @@ public class ParameterValidationAspect {
         Object[] args = joinPoint.getArgs();
         for (Object arg : args) {
             System.out.println(arg);
-            Map<String, String> map = ValidatorUtils.validate(arg);
+            Map<String, String> map = ValidatorUtil.validate(arg);
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 String key = entry.getKey();
                 String value = entry.getValue();

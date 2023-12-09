@@ -9,9 +9,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * 参数验证工具类
  * @author carey
  */
-public class ValidatorUtils {
+public class ValidatorUtil {
     private static Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 
     /**

@@ -2,10 +2,9 @@ package com.example.basic.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.basic.entity.User;
-import com.example.basic.eums.ResponsEums;
 import com.example.basic.service.UserService;
 import com.example.basic.mapper.UserMapper;
-import com.example.basic.utils.ServiceResponse;
+import com.example.basic.utils.response.ServiceResponse;
 import com.example.basic.vo.UserReqVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

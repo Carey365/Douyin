@@ -92,6 +92,17 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.7</version> <!-- 版本号可能会有所不同 -->
         </dependency>
+        <!-- poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.0.0</version>
+        </dependency>
 
 
     </dependencies>
