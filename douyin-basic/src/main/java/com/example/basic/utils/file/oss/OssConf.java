@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2022/12/19 16:44
  * @version 1.0
  */
-@ConfigurationProperties(prefix = "oss-conf")
+//@ConfigurationProperties(prefix = "oss-conf")
 public class OssConf {
 
     public String endPoint;

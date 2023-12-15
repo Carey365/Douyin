@@ -12,7 +12,7 @@ import java.io.File;
  * 图片上传service
  */
 @Slf4j
-@Service
+//@Service
 public class FileUploadService {
 
     @Autowired

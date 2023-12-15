@@ -18,7 +18,7 @@ import java.io.IOException;
  * @author zhanghui708
  * @date 2023/08/21
  */
-@Service
+//@Service
 @Slf4j
 public class FileApiController implements FileApi {
     /**

@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
  * @date 2022/12/19 15:55
  * @version 1.0
  */
-@Configuration
-@EnableConfigurationProperties(OssConf.class)
-@ConditionalOnProperty(prefix = "oss-conf", name = {"endpoint", "accessKey", "secretKey"}, matchIfMissing = false)
+//@Configuration
+//@EnableConfigurationProperties(OssConf.class)
+//@ConditionalOnProperty(prefix = "oss-conf", name = {"endpoint", "accessKey", "secretKey"}, matchIfMissing = false)
 public class OssClientAutoConfig {
 
     @Autowired
