@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="libs-snapshots-local" />
+      <option name="name" value="libs-snapshots" />
+      <option name="url" value="http://artifactory.jd.com/libs-snapshots" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots-wangyin" />
+      <option name="name" value="WangYinNexus-Snapshots-cache" />
+      <option name="url" value="http://artifactory.jd.com/WangYinNexus-Snapshots-cache" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -15,6 +25,16 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="libs-releases-local" />
+      <option name="name" value="libs-releases" />
+      <option name="url" value="http://artifactory.jd.com/libs-releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="WangYinNexus" />
+      <option name="name" value="WangYinNexus" />
+      <option name="url" value="http://nexus.cbpmgt.com/nexus/content/groups/public" />
     </remote-repository>
   </component>
 </project>
