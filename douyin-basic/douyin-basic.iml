@@ -98,6 +98,10 @@
     <orderEntry type="library" name="Maven: org.bytedeco:flandmark:1.07-1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco:leptonica:1.81.1-1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco:tesseract:4.1.1-1.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:11" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:11" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:11" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:11" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco:ffmpeg-platform:4.4-1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco:javacpp-platform:1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.bytedeco:javacpp:android-arm:1.5.6" level="project" />
@@ -141,7 +145,6 @@
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-lite:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:4.0.0" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.20" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.06" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.68" level="project" />
@@ -163,6 +166,7 @@
     <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-dom:1.13" level="project" />
     <orderEntry type="library" name="Maven: xalan:xalan:2.7.2" level="project" />
     <orderEntry type="library" name="Maven: xalan:serializer:2.7.2" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-ext:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-extension:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-gui-util:1.13" level="project" />
