@@ -1,18 +1,49 @@
 package com.example.basic.mapper;
 
-import com.example.basic.entity.Comment;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.example.basic.bo.CommentReqBO;
+import com.example.basic.bo.CommentRespBO;
+import com.example.basic.po.CommentPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
-* @author carey
-* @description 针对表【comment(评论表)】的数据库操作Mapper
-* @createDate 2023-11-25 22:30:19
-* @Entity com.example.basic.entity.Comment
-*/
+ * commentMapper
+ *
+ * @author chenlianghao
+ * @date 2023-12-19
+ */
 @Mapper
-public interface CommentMapper extends BaseMapper<Comment> {
+public interface CommentMapper extends BaseMapper<CommentPO> {
 
+    /**
+     * 更新
+     *
+     * @param commentReqBO 入参
+     * @return int
+     */
+    int update(CommentReqBO commentReqBO);
+
+    /**
+     * 查询列表
+     *
+     * @param commentReqBO 入参
+     * @return {@link List }<{@link CommentRespBO }>
+     */
+    List<CommentRespBO> queryList(CommentReqBO commentReqBO);
+
+    /**
+     * 分页查询列表
+     *
+     * @param page          分页
+     * @param commentReqBO 入参
+     * @return {@link IPage }<{@link CommentRespBO }>
+     */
+    IPage<CommentRespBO> selectPageList(IPage page, @Param("req")CommentReqBO commentReqBO);
 }
 
 

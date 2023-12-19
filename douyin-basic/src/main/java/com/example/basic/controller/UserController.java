@@ -1,5 +1,5 @@
 package com.example.basic.controller;
-import com.example.basic.entity.User;
+import com.example.basic.po.UserPO;
 import com.example.basic.eums.ResponsEums;
 import com.example.basic.service.impl.UserServiceImpl;
 import com.example.basic.utils.aop.log.PrintLog;
@@ -25,13 +25,13 @@ public class UserController {
     @PostMapping("/userinfo")
     @ParameterValidation
     @PrintLog(methodName = "获取用户信息")
-    public ControllerResponse<User> getUser(@RequestBody UserReqVO userReqVO){
-        ControllerResponse<User> response=new ControllerResponse<>();
+    public ControllerResponse<UserPO> getUser(@RequestBody UserReqVO userReqVO){
+        ControllerResponse<UserPO> response=new ControllerResponse<>();
 //        log.info("controller入参为{}", JSON.toJSON(userReqVO));
         userReqVO.setName(null);
-        ServiceResponse<User> serviceResponse=userService.getUser(userReqVO);
+        ServiceResponse<UserPO> serviceResponse=userService.getUser(userReqVO);
         if(ResponsEums.Success.getCode().equals(serviceResponse.getCode())){
-            User user=serviceResponse.getData();
+            UserPO user=serviceResponse.getData();
             response.success();
             response.setData(user);
             return response;

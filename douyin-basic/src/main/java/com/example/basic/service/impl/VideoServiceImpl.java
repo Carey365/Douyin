@@ -1,7 +1,7 @@
 package com.example.basic.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.basic.entity.Video;
+import com.example.basic.po.VideoPO;
 import com.example.basic.service.VideoService;
 import com.example.basic.mapper.VideoMapper;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2023-11-25 22:30:07
 */
 @Service
-public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video>
+public class VideoServiceImpl extends ServiceImpl<VideoMapper, VideoPO>
     implements VideoService{
 
 }

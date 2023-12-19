@@ -1,6 +1,6 @@
 package com.example.basic.mapper;
 
-import com.example.basic.entity.Favor;
+import com.example.basic.po.FavorPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
 * @Entity com.example.basic.entity.Favor
 */
 @Mapper
-public interface FavorMapper extends BaseMapper<Favor> {
+public interface FavorMapper extends BaseMapper<FavorPO> {
 
 }
 

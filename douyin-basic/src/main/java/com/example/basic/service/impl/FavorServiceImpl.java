@@ -1,7 +1,7 @@
 package com.example.basic.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.basic.entity.Favor;
+import com.example.basic.po.FavorPO;
 import com.example.basic.service.FavorService;
 import com.example.basic.mapper.FavorMapper;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2023-11-25 22:30:29
 */
 @Service
-public class FavorServiceImpl extends ServiceImpl<FavorMapper, Favor>
+public class FavorServiceImpl extends ServiceImpl<FavorMapper, FavorPO>
     implements FavorService{
 
 }

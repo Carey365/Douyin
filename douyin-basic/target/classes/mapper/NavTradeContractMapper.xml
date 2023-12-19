@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.basic.mapper.NavTradeContractMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.basic.po.NavTradeContract">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="subjectNo" column="subject_no" jdbcType="VARCHAR"/>
+            <result property="orderNo" column="order_no" jdbcType="VARCHAR"/>
+            <result property="contractNo" column="contract_no" jdbcType="VARCHAR"/>
+            <result property="contractName" column="contract_name" jdbcType="VARCHAR"/>
+            <result property="contractAmount" column="contract_amount" jdbcType="DECIMAL"/>
+            <result property="contractSignDate" column="contract_sign_date" jdbcType="VARCHAR"/>
+            <result property="contractUrl" column="contract_url" jdbcType="VARCHAR"/>
+            <result property="tenantNo" column="tenant_no" jdbcType="VARCHAR"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="modifiedDate" column="modified_date" jdbcType="TIMESTAMP"/>
+            <result property="deleted" column="deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,subject_no,order_no,
+        contract_no,contract_name,contract_amount,
+        contract_sign_date,contract_url,tenant_no,
+        created_date,modified_date,deleted
+    </sql>
+</mapper>

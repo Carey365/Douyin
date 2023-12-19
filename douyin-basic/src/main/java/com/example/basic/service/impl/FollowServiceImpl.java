@@ -1,7 +1,7 @@
 package com.example.basic.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.basic.entity.Follow;
+import com.example.basic.po.FollowPO;
 import com.example.basic.service.FollowService;
 import com.example.basic.mapper.FollowMapper;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 * @createDate 2023-11-25 22:30:33
 */
 @Service
-public class FollowServiceImpl extends ServiceImpl<FollowMapper, Follow>
+public class FollowServiceImpl extends ServiceImpl<FollowMapper, FollowPO>
     implements FollowService{
 
 }

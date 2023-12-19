@@ -1,7 +1,7 @@
 package com.example.basic.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.basic.entity.User;
+import com.example.basic.po.UserPO;
 import com.example.basic.service.UserService;
 import com.example.basic.mapper.UserMapper;
 import com.example.basic.utils.response.ServiceResponse;
@@ -16,14 +16,14 @@ import org.springframework.util.ObjectUtils;
 * @createDate 2023-11-25 22:28:34
 */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User>
+public class UserServiceImpl extends ServiceImpl<UserMapper, UserPO>
     implements UserService{
     @Autowired
     private UserMapper userMapper;
 
-    public ServiceResponse<User> getUser(UserReqVO userReqVO) {
-        User user=userMapper.selectById(userReqVO.getUserId());
-        ServiceResponse<User> response=new ServiceResponse<>();
+    public ServiceResponse<UserPO> getUser(UserReqVO userReqVO) {
+        UserPO user=userMapper.selectById(userReqVO.getUserId());
+        ServiceResponse<UserPO> response=new ServiceResponse<>();
         if(!ObjectUtils.isEmpty(user)){
             response.success();
             response.setData(user);

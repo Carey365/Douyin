@@ -1,6 +1,6 @@
 package com.example.basic.mapper;
 
-import com.example.basic.entity.User;
+import com.example.basic.po.UserPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
 * @Entity com.example.basic.entity.User
 */
 @Mapper
-public interface UserMapper extends BaseMapper<User> {
+public interface UserMapper extends BaseMapper<UserPO> {
 
 }
 
