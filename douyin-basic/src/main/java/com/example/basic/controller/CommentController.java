@@ -19,7 +19,7 @@ import java.util.List;
  * @date 2023-12-19
  */
 @RestController
-@RequestMapping(value = "/page/comment")
+@RequestMapping(value = "/douyin/comment")
 @Slf4j
 public class CommentController {
 
