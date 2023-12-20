@@ -1,4 +1,4 @@
-package com.example.basic.utils.excel;
+package com.example.basic.utils.excel.vo;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,8 +8,7 @@ import java.lang.reflect.Field;
 /**
  * ColumnVO对象
  *
- * @author yuchengying
- * @date 2023/11/03
+ * @author chenlianghao5
  */
 @Getter
 @Setter

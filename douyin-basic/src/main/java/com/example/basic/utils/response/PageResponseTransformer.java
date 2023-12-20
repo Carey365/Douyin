@@ -1,11 +1,15 @@
-package com.example.basic.utils;
+package com.example.basic.utils.response;
 
 import com.example.basic.utils.response.ServiceResponse;
-import com.example.basic.vo.PageResponse;
+import com.example.basic.utils.response.PageResponse;
 
 import java.util.Map;
 import java.util.function.Function;
 
+/**
+ * @author chenlianghao5
+ * 响应转换器
+ */
 public class PageResponseTransformer {
     private static final String FAIL_CODE = "999999";
     private static final String SUCCESS_CODE = "000000";

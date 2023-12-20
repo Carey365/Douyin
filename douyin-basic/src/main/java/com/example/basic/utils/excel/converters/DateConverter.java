@@ -11,8 +11,6 @@ import java.util.Date;
  *
 
  日期转换器
- * @author zhanghui708
- * @date 2023/08/15
  */
 @Slf4j
 public class DateConverter implements Converter<Date> {

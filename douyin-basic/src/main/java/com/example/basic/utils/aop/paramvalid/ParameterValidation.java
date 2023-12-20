@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 参数校验注解
  * @author chenlianghao
  */
 @Target({ElementType.TYPE,ElementType.METHOD})

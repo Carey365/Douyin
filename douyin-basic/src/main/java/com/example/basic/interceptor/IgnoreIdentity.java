@@ -1,4 +1,4 @@
-package com.example.basic.utils.aop.log;
+package com.example.basic.interceptor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,11 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 日志打印注解
- * @author chenlianghao
+ * @author chenlianghao5
  */
-@Target({ElementType.TYPE,ElementType.METHOD})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PrintLog {
-    public String methodName();
+public @interface IgnoreIdentity {
+    boolean user() default false;
 }

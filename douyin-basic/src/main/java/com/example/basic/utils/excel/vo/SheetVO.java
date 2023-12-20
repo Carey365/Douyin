@@ -1,12 +1,10 @@
-package com.example.basic.utils.excel;
+package com.example.basic.utils.excel.vo;
 
 import lombok.Data;
 
 /**
  * sheet配置
- *
- * @author zhouwucheng3
- * @date 2023/06/28
+ * @author chenlianghao5
  */
 @Data
 public class SheetVO {

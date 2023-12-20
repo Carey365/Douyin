@@ -5,8 +5,6 @@ import org.apache.poi.ss.usermodel.CellType;
 /**
  *
  type converter
- * @author zhanghui708
- * @date 2023/08/11
  */
 public interface Converter<T> {
     /**

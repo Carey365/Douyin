@@ -4,8 +4,7 @@ import java.lang.annotation.*;
 /**
  *
  excel行注解
- * @author zhanghui708
- * @date 2023/08/11
+ * @author chenlianghao5
  */
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

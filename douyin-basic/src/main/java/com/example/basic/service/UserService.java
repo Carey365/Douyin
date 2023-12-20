@@ -2,6 +2,7 @@ package com.example.basic.service;
 
 import com.example.basic.po.UserPO;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.basic.vo.UserLoginReqVO;
 
 /**
 * @author carey
@@ -10,4 +11,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface UserService extends IService<UserPO> {
 
+    UserPO Login(UserLoginReqVO userLoginReqVO);
 }

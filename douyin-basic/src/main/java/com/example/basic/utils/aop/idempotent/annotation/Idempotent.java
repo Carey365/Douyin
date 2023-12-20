@@ -5,10 +5,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 幂等
- *
- * @author ext.ruanchanglong1
- * @date 2023-09-25 17:07
+ * 幂等注解
+ * @author chenlianghao5
  */
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

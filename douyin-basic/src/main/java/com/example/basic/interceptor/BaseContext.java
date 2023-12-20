@@ -1,5 +1,8 @@
 package com.example.basic.interceptor;
 
+/**
+ * @author chenlianghao5
+ */
 public class BaseContext {
 
     public static ThreadLocal<Long> threadLocal = new ThreadLocal<>();

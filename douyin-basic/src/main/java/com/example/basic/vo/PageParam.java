@@ -8,8 +8,7 @@ import java.io.Serializable;
 /**
  * 分页参数
  *
- * @author yuchengying
- * @date 2023/07/18
+ * @author chenlianghao5
  */
 @Getter
 @Setter

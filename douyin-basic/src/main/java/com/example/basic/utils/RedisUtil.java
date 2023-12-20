@@ -11,6 +11,9 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Redis工具类
+ */
 @Configuration
 @Slf4j
 public class RedisUtil {

@@ -1,7 +1,8 @@
 package com.example.basic.controller;
 import com.example.basic.converter.CommentConverter;
 import com.example.basic.service.CommentService;
-import com.example.basic.utils.PageResponseTransformer;
+import com.example.basic.utils.response.PageResponseTransformer;
+import com.example.basic.utils.response.PageResponse;
 import com.example.basic.vo.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

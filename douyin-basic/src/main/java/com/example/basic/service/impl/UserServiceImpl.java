@@ -5,6 +5,7 @@ import com.example.basic.po.UserPO;
 import com.example.basic.service.UserService;
 import com.example.basic.mapper.UserMapper;
 import com.example.basic.utils.response.ServiceResponse;
+import com.example.basic.vo.UserLoginReqVO;
 import com.example.basic.vo.UserReqVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +32,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserPO>
         }
         response.fail();
         return response;
+    }
+
+    @Override
+    public UserPO Login(UserLoginReqVO userLoginReqVO) {
+        return null;
     }
 }
 

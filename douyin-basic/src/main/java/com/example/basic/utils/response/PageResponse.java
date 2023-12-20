@@ -1,12 +1,14 @@
-package com.example.basic.vo;
+package com.example.basic.utils.response;
 
-
-import com.example.basic.utils.PageResponseTransformer;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author chenlianghao5
+ * 分页响应
+ */
 public class PageResponse<T> implements Serializable {
     private String traceId;
     private String code;
