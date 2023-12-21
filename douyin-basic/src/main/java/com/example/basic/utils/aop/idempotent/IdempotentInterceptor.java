@@ -50,7 +50,7 @@ public class IdempotentInterceptor {
         }
         long expireTime = idempotent.expireTime();
         String info = idempotent.info();
-        boolean lockNoWait = RedisUtil.acquireLock(key,info,expireTime);
+        boolean lockNoWait = RedisUtil.acquireLock(key,expireTime);
         if (!lockNoWait) {
             log.warn("方法:{}重发请求", method);
             throw new Exception(info);
@@ -58,7 +58,7 @@ public class IdempotentInterceptor {
         try {
             return joinPoint.proceed();
         } finally {
-            RedisUtil.releaseLock(key,info);
+            RedisUtil.releaseLock(key);
         }
     }
 }

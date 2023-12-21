@@ -1,9 +1,9 @@
 package com.example.basic.manager;
 
-import com.example.basic.bo.CommentPageReqBO;
-import com.example.basic.bo.CommentPageRespBO;
-import com.example.basic.bo.CommentReqBO;
-import com.example.basic.bo.CommentRespBO;
+import com.example.basic.bo.comment.CommentPageReqBO;
+import com.example.basic.bo.comment.CommentPageRespBO;
+import com.example.basic.bo.comment.CommentReqBO;
+import com.example.basic.bo.comment.CommentRespBO;
 import com.example.basic.po.CommentPO;
 
 import java.util.List;

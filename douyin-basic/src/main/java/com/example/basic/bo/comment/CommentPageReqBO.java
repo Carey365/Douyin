@@ -1,20 +1,25 @@
-package com.example.basic.bo;
+package com.example.basic.bo.comment;
 
+import com.example.basic.vo.PageParam;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * commentRespBO
+ * commentPageReqBO
  *
  * @author chenlianghao
  * @date 2023-12-19
  */
 @Data
-public class CommentRespBO implements Serializable {
+public class CommentPageReqBO implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    /**
+     *分页参数
+     */
+    private PageParam pageParam;
     /**
      * 视频id
      */

@@ -1,13 +1,12 @@
 package com.example.basic.mapper;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.example.basic.bo.CommentReqBO;
-import com.example.basic.bo.CommentRespBO;
+import com.example.basic.bo.comment.CommentReqBO;
+import com.example.basic.bo.comment.CommentRespBO;
 import com.example.basic.po.CommentPO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

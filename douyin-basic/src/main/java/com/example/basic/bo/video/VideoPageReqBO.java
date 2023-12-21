@@ -1,10 +1,9 @@
-package com.example.basic.bo;
+package com.example.basic.bo.video;
 
 import com.example.basic.vo.PageParam;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * commentPageReqBO
@@ -13,7 +12,7 @@ import java.util.Date;
  * @date 2023-12-19
  */
 @Data
-public class CommentPageReqBO implements Serializable {
+public class VideoPageReqBO implements Serializable {
 
     private static final long serialVersionUID = 1L;
     /**
@@ -21,19 +20,12 @@ public class CommentPageReqBO implements Serializable {
      */
     private PageParam pageParam;
     /**
-     * 视频id
+     * 视频id 自动生成
      */
     private Long videoId;
+
     /**
-     * 评论者id
+     * 作者id 创建时token携带
      */
     private Long authorId;
-    /**
-     * 评论内容
-     */
-    private String content;
-    /**
-     * 创建时间
-     */
-    private Date createdTime;
 }

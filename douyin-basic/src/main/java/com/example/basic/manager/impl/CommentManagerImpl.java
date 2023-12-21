@@ -1,9 +1,9 @@
 package com.example.basic.manager.impl;
 
-import com.example.basic.bo.CommentPageReqBO;
-import com.example.basic.bo.CommentPageRespBO;
-import com.example.basic.bo.CommentReqBO;
-import com.example.basic.bo.CommentRespBO;
+import com.example.basic.bo.comment.CommentPageReqBO;
+import com.example.basic.bo.comment.CommentPageRespBO;
+import com.example.basic.bo.comment.CommentReqBO;
+import com.example.basic.bo.comment.CommentRespBO;
 import com.example.basic.converter.CommentConverter;
 import com.example.basic.manager.CommentManager;
 import com.example.basic.mapper.CommentMapper;

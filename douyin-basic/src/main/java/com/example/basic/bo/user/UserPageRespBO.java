@@ -1,11 +1,12 @@
-package com.example.basic.bo;
+package com.example.basic.bo.user;
+
+import com.example.basic.vo.PageParam;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.basic.vo.PageParam;
-import lombok.Data;
 /**
  * commentPage分页查询出参
  *
@@ -13,7 +14,7 @@ import lombok.Data;
  * @date 2023-12-19
  */
 @Data
-public class CommentPageRespBO implements Serializable {
+public class UserPageRespBO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -24,9 +25,9 @@ public class CommentPageRespBO implements Serializable {
     /**
      * 明细列表
      */
-    private List<CommentRespBO> list;
+    private List<UserRespBO> list;
 
-    public CommentPageRespBO(){
+    public UserPageRespBO(){
         this.pageParam = new PageParam();
         this.list = new ArrayList<>();
     }

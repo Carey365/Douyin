@@ -17,7 +17,7 @@
         content,created_time
     </sql>
     <!-- 根据主键更新-->
-    <update id="update" parameterType="com.example.basic.bo.CommentReqBO">
+    <update id="update" parameterType="com.example.basic.bo.comment.CommentReqBO">
         UPDATE comment
         <set>
             <if test="videoId != null ">
@@ -37,7 +37,7 @@
         and deleted = 0
     </update>
     <!--列表查询-->
-    <select id="queryList" resultMap="BaseResultMap" parameterType="com.example.basic.bo.CommentReqBO">
+    <select id="queryList" resultMap="BaseResultMap" parameterType="com.example.basic.bo.comment.CommentReqBO">
         SELECT <include refid="Base_Column_List" />
         FROM comment
         <where>

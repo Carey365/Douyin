@@ -1,4 +1,4 @@
-package com.example.basic.bo;
+package com.example.basic.bo.comment;
 
 import lombok.Data;
 
