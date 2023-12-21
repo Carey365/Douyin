@@ -52,18 +52,9 @@ public class DateUtil {
      * @return 返回当前时间字符串
      */
     public static String now() {
-        SimpleDateFormat STD_FMT = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
-        return fmt(new Date(), STD_FMT);
+        return formatDateString(LocalDate.now(),"yyyyMMdd HH:mm:ss");
     }
 
-    /**
-     * 获取当前时间 格式：yyyyMMddHHmmss
-     * @return 返回当前时间字符串
-     */
-    public static String fileName() {
-        SimpleDateFormat FILE_NAME = new SimpleDateFormat("yyyyMMddHHmmss");
-        return fmt(new Date(), FILE_NAME);
-    }
     /**
      * 字符串转换成日期开始时间
      * @param dateStr 时间str
@@ -94,16 +85,6 @@ public class DateUtil {
     /**
      * 将日期转换成指定格式字符串
      * @param date 输入日期
-     * @param fmt 转换格式（DateFormat类型）
-     * @return 返参
-     */
-    private static String fmt(Date date, DateFormat fmt) {
-        return fmt.format(date);
-    }
-
-    /**
-     * 将日期转换成指定格式字符串
-     * @param date 输入日期
      * @param form 转换格式（String类型）
      * @return 返参
      */
@@ -113,5 +94,19 @@ public class DateUtil {
         }
         SimpleDateFormat format = new SimpleDateFormat(form);
         return format.format(date);
+    }
+
+    /**
+     * 将日期转换成指定格式字符串
+     * @param date 输入日期
+     * @param form 转换格式（String类型）
+     * @return 返参
+     */
+    public static String formatDateString(LocalDate date,String form){
+        if(date==null){
+            return null;
+        }
+        DateTimeFormatter formatter=DateTimeFormatter.ofPattern(form);
+        return date.format(formatter);
     }
 }
