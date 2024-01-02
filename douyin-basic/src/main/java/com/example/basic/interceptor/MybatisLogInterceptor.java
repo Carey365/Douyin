@@ -27,8 +27,8 @@ import java.util.stream.Collectors;
 /**
  * mybatis日志拦截器
  *
- * @author yuchengying
- * @date 2023/07/31
+ * @author chenlianghao
+ * @date 2024/01/02
  */
 @Slf4j
 @Profile({"local", "test"})
