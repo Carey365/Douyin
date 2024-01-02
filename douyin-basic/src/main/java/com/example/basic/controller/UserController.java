@@ -1,4 +1,5 @@
 package com.example.basic.controller;
+import com.example.basic.interceptor.IgnoreIdentity;
 import com.example.basic.interceptor.JwtClaimsConstant;
 import com.example.basic.interceptor.JwtProperties;
 import com.example.basic.po.UserPO;
@@ -56,6 +57,7 @@ public class UserController {
      * @return 返参
      */
     @PostMapping("/login")
+    @IgnoreIdentity(user = true)
     public ControllerResponse<UserLoginRespVO> login(@RequestBody UserLoginReqVO userLoginReqVO){
         log.info("用户登录：{}",userLoginReqVO.getUserName());
 
